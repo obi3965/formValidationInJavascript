@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" name="myform" id="email-form">
+        <input type="text" id="email" placeholder="email">
+         <span id="error"></span>
+
+        <button type="submit" id="submit">submit</button>
+    </form>
+
+   <script>
+/*
+function formsvalidation(){
+    var email_1 = document.myform.email.value;
+   
+    if(email_1 ==""){
+        alert("please enter your email");
+        document.myform.email.focus();
+        return false;
+    }
+}
+
+    formsvalidation(); */
+
+    
+     function validateEmail(){
+         var emailText = document.getElementById('email').value;
+         var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+         if(pattern.test(emailText)){
+             return true;
+         }else{
+             document.getElementById("error"). innerHTML = 'bad email';
+             //alert('bad email' + emailText);
+             return false;
+         }
+     }
+      window.onload = function(){
+          document.getElementById("email-form").onsubmit = validateEmail;
+      }
+      
+     
+  
+   </script>
+</body>
+</html>

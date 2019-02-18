@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form3 validation</title>
+    <link rel="stylesheet" href="form3.css">
+</head>
+<body>
+    
+
+    <form action="" name="contact">
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username">
+        
+
+        <label for="age">Age</label>
+        <input type="text" id="age" name="userage">
+
+        <label for="pass">password</label>
+        <input type="text" name="userpass" id="pass">
+
+        <label for="repass">confirm password</label>
+        <input type="text" name="userrepass" id="repass">
+
+        <label for="email">Email</label>
+        <input type="text" name="useremail" id="email">
+
+
+
+        <div class="class1">
+        <span class="req">Gender</span>
+        <label><input type="radio" name="gender">:Male </label>
+        <label><input type="radio" name="gender">:Female </label>
+    </div>
+        
+    <div class="class2">
+         <span class="req">Terms</span>  
+        <label for="agree">: i Agree</label>
+        <input type="checkbox" name="terms" id="agree"> 
+        </div>
+       
+        <div class="class3">
+        <label class="req" for="address">Address</label>
+        <textarea name="address" id="add" cols="25" rows="10"></textarea>
+    </div>
+        <button type="submit">submit</button> <input type="reset">
+    </form>
+
+    <script src="form3.js"></script>
+</body>
+</html>

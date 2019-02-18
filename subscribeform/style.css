@@ -1,0 +1,24 @@
+
+form{
+    display: flex;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),
+     url("https://images.pexels.com/photos/571163/pexels-photo-571163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type=text]{
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#error{
+    color: brown;
+    
+}
